@@ -26,8 +26,36 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+select,
+textarea{
+  @apply rounded border p-2 outline-none ring-indigo-300 focus:ring
+    dark:text-white dark:bg-gray-800;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+.card{
+  @apply mb-5 block rounded-lg border border-gray-200 shadow-md;
+}
+
+.cart-badge{
+  @apply absolute font-bold text-orange-600 mt-8 mt-0 text-center w-4;
+}
+
+.primary-button{
+  @apply rounded bg-amber-300 text-black py-2 px-4 shadow outline-none
+       hover:bg-amber-200 active:bg-amber-500;
+}
+
+.default-button{
+  @apply rounded bg-gray-100 py-2 px-4 text-black shadow outline-none
+  hover:bg-gray-200 active:bg-gray-200
+  dark:text-white dark:bg-gray-800
+  dark:hover:bg-gray-700;
+}
+
+
