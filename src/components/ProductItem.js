@@ -21,7 +21,7 @@ export default function ProductItem({ product }) {
                     <h2 className="text-lg">{product.name}</h2>
                 </Link>
                 <ProductRate rate={product.rating} count={product.numReviews} />
-                <p>${product.price}</p>
+                <p>R{product.price}</p>
                 <AddToCart showQty={false} product={product} increasePerClick={true} />
             </div>
         </div>

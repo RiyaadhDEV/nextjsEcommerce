@@ -29,7 +29,7 @@ export default function CartSidebar() {
       ) : (
         <div className="p-2 flex flex-col items-center border-b border-gray-600">
           <div>Subtotal</div>
-          <div className="font-bold text-orange-700">${itemsPrice}</div>
+          <div className="font-bold text-orange-700">R{itemsPrice}</div>
           <div>
             <Link href="/cart" className="w-full text-center p-1 rounded-2xl border-2">
               Go to Cart

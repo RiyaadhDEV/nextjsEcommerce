@@ -50,7 +50,7 @@ export default function ProductDetailPage({ params: { id } }) {
                         <div>
                             Price
                         </div>
-                        <div>${product.price}</div>
+                        <div>R{product.price}</div>
                     </div>
                     <AddToCart product={product} redirect={true} />
                 </div>
